@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Header content styles */
+/* Header content styles */
+header{
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Add position relative */
+}
+
+header h1{
+    font-size: 70px;
+    padding-right: 10px; /* Correct padding property */
+    position:relative; /* Add position absolute */
+    top: 20px; /* Position the h1 at the top */
+    left: -420px; /* Position the h1 at the left */
+}
+.header-content {
+    position: relative; /* Set position to relative for absolute positioning */
+    text-align: center;
+    margin-top: 50px; /* Adjust margin-top as needed */
+}
+.header-content .btn {
+    position: absolute; /* Set position to absolute */
+    bottom: 10%; /* Position the button vertically at 50% from the top */
+    left: 50%; /* Position the button horizontally at 50% from the left */
+    transform: translate(-50%, -50%); /* Center the button */
+    padding: 10px 20px;
+    background-color:blanchedalmond;
+    color: #333;
+    text-decoration: none;
+    border-radius:none;
+    transition: background-color 0.3s ease;
+    z-index: 1; /* Ensure the button is above the image */
+}
+.header-content .btn p{
+    position: absolute; /* Set position to absolute */
+    bottom: 20%; /* Position the button vertically at 50% from the top */
+    left: 50%; /* Position the button horizontally at 50% from the left */
+    background-color: burlywood;
+}
+
+.header-content .btn:hover {
+    background-color: blanchedalmond;
+}
+
+/* Image styles */
+img {
+    position: relative;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    margin-top: 20px; /* Add margin-top to create space between the image and the header */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 0; /* Ensure the image is behind the button */
+}
+
+
+nav {
+    position: absolute; /* Position the nav bar absolutely */
+    top: 60px; /* Distance from the top */
+    right: 50px; /* Distance from the left */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 20px;
+    padding: 0;
+    font-size: 20px;
+
+}
+
+li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add space between list items */
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+a:hover {
+    color: burlywood;
+}
+
+hr {
+    width: 1200px; /* Adjust the width of the line */
+    height: 5px; /* Adjust the height of the line */
+    background-color: #333; /* Set the color of the line */
+    margin: 20px auto; /* Adjust margin to center the line horizontally */
+    border: none; /* Remove any default border */
+}
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-info p:first-child {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+
+/* Contact form styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form textarea {
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #555;
+}
